@@ -1,0 +1,32 @@
+ <b>West Coast Experiments Conference</b> at Stanford GSB. Attended. May 21, 2016. <a href="https://www.gsb.stanford.edu/facseminars/conferences/west-coast-experiments-conference">[link]</a>
+<br>
+<br>
+<b>Women in Analytics Conference</b> in Columbus, OH. Talk. [upcoming] March 21-22, 2019. <a href="https://www.womeninanalytics.org/">[link]</a>
+<br>
+<br>
+
+<b>WeCNLP Summit</b> at Facebook in Menlo Park, CA. Attending. [upcoming] September 28, 2018. <a href="https://wecnlpsummit18.splashthat.com/">[link]</a>
+<br>
+<br>
+
+  <b>Women in Data Science Conference</b> at Stanford University. Attended at LLNL. March 6, 2018. <a href="http://widsconference.org/">[link]</a>
+<br>
+<br>
+
+<br>
+<br>-->
+
+ <!–  <b>Women in Data Science Conference</b> at Stanford University. Attended. November 2, 2015. <a href="http://widsconference.org/">[link]</a>
+<br>
+<br>–->
+<!—  <b>Applications of Machine Learning to Economics and the Social Sciences</b> by Sendhil Mullainathan. Mini-course at UC Berkeley's Institute for Research on Labor and Employment. August 27-29, 2015. 
+<br>
+<br>-->
+
+ <b>''The Role of Social in Social Theory, Social Media, and Social Engineering'':</b> Class Lecture for MS&E190 at Stanford University. May 4, 2017. 
+<br>
+<br>
+
+<b>Women in Analytics Conference</b> in Columbus, OH. Talk. [upcoming] March 21-22, 2019. <a href="https://www.womeninanalytics.org/">[link]</a>
+<br>
+<br>

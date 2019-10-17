@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/" 
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+     xmlns:dc="http://purl.org/dc/elements/1.1/" 
+     xmlns:cc="http://web.resource.org/cc/">
+    <channel>
+        <title>Delicious/kaltenburger</title>
+        <link>http://delicious.com/kaltenburger</link>
+        <description>links posted by kaltenburger</description>
+        <atom:link rel="self" type="application/rss+xml" href="http://feeds.delicious.com/v2/rss/kaltenburger"/>
+        
+        <item>
+            <title>Prediction Policy Problems</title>
+            <pubDate>Mon, 07 Sep 2015 04:02:25 +0000</pubDate>
+            <guid isPermaLink="false">http://delicious.com/url/908bec4e96c5ef1f1a24be78fa237e08#kaltenburger</guid>
+            <link>https://www.aeaweb.org/articles.php?doi=10.1257/aer.p20151023</link>
+            <dc:creator><![CDATA[kaltenburger]]></dc:creator>
+            <comments>http://delicious.com/url/908bec4e96c5ef1f1a24be78fa237e08</comments>
+            <wfw:commentRss>http://feeds.delicious.com/v2/rss/url/908bec4e96c5ef1f1a24be78fa237e08</wfw:commentRss>
+            <source url="http://feeds.delicious.com/v2/rss/kaltenburger">kaltenburger's links</source>
+            <description>claims that causal inference is not necessary for many policy applications; details of the model not included (but in an unpublished version)</description>
+            <category domain="http://delicious.com/kaltenburger/">causal inference</category>
+            <category domain="http://delicious.com/kaltenburger/">observational methods</category>
+            <category domain="http://delicious.com/kaltenburger/">ML vs. causality</category>
+            
+        </item>
+        
+    </channel>
+</rss>
