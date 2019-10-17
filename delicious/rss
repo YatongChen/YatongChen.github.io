@@ -6,24 +6,24 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/" 
      xmlns:cc="http://web.resource.org/cc/">
     <channel>
-        <title>Delicious/kaltenburger</title>
-        <link>http://delicious.com/kaltenburger</link>
-        <description>links posted by kaltenburger</description>
-        <atom:link rel="self" type="application/rss+xml" href="http://feeds.delicious.com/v2/rss/kaltenburger"/>
+        <title>Delicious/yatongchen</title>
+        <link>http://delicious.com/yatongchen</link>
+        <description>links posted by yatongchen</description>
+        <atom:link rel="self" type="application/rss+xml" href="http://feeds.delicious.com/v2/rss/yatongchen"/>
         
         <item>
             <title>Prediction Policy Problems</title>
             <pubDate>Mon, 07 Sep 2015 04:02:25 +0000</pubDate>
-            <guid isPermaLink="false">http://delicious.com/url/908bec4e96c5ef1f1a24be78fa237e08#kaltenburger</guid>
+            <guid isPermaLink="false">http://delicious.com/url/908bec4e96c5ef1f1a24be78fa237e08#yatongchen</guid>
             <link>https://www.aeaweb.org/articles.php?doi=10.1257/aer.p20151023</link>
-            <dc:creator><![CDATA[kaltenburger]]></dc:creator>
+            <dc:creator><![CDATA[yatongchen]]></dc:creator>
             <comments>http://delicious.com/url/908bec4e96c5ef1f1a24be78fa237e08</comments>
             <wfw:commentRss>http://feeds.delicious.com/v2/rss/url/908bec4e96c5ef1f1a24be78fa237e08</wfw:commentRss>
-            <source url="http://feeds.delicious.com/v2/rss/kaltenburger">kaltenburger's links</source>
+            <source url="http://feeds.delicious.com/v2/rss/yatongchen">yatongchen's links</source>
             <description>claims that causal inference is not necessary for many policy applications; details of the model not included (but in an unpublished version)</description>
-            <category domain="http://delicious.com/kaltenburger/">causal inference</category>
-            <category domain="http://delicious.com/kaltenburger/">observational methods</category>
-            <category domain="http://delicious.com/kaltenburger/">ML vs. causality</category>
+            <category domain="http://delicious.com/yatongchen/">causal inference</category>
+            <category domain="http://delicious.com/yatongchen/">observational methods</category>
+            <category domain="http://delicious.com/yatongchen/">ML vs. causality</category>
             
         </item>
         
