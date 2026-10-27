@@ -1,457 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31678281-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-31678281-2');
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31678281-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-31678281-2');
   </script>
+
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=0.5”>
-
-  <meta name="description" content="Yatong Chen">
-  <meta name="author" content="Yatong Chen"> 
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yatong Chen — Research Group Leader at the Max Planck Institute for Intelligent Systems. AI evaluation, incentives, and mechanism design. On the 2026–27 academic job market.">
+  <meta name="author" content="Yatong Chen">
   <title>Yatong Chen</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="/favicon-144.png">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <link rel="icon" href="/favicon.ico">
 
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1f2328;
+      --muted: #5b6370;
+      --accent: #1f4e9c;
+      --highlight: #b3261e;
+      --rule: #e3e5e8;
+      --banner-bg: #f2f6fc;
+      --banner-border: #c9d8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    .page { max-width: 860px; margin: 0 auto; padding: 40px 20px 80px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-  <!-- Custom styles for this template -->
-  <link href="css.starter-template.css" rel="stylesheet">
+    header { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+    header h1 { margin: 0 0 4px; font-size: 32px; font-weight: bold; }
+    header .role { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.5; }
+    header .links { margin-top: 10px; font-size: 15px; }
+    header .links a { margin-right: 12px; }
+    header img { width: 170px; height: 170px; object-fit: cover; border-radius: 6px; flex-shrink: 0; }
 
+    .banner {
+      margin: 28px 0 8px;
+      padding: 14px 18px;
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .banner b { color: var(--accent); }
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-    <!-- ****** faviconit.com favicons ****** -->
-<!--     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
-    <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-    <link rel="apple-touch-icon" href="/favicon-57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"> -->
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="/favicon-144.png">
-    <meta name="msapplication-config" content="/browserconfig.xml">
-    <!-- ****** faviconit.com favicons ****** -->
+    nav { margin: 22px 0 0; padding: 8px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-size: 15px; }
+    nav a { margin-right: 16px; }
 
+    h2 { font-size: 22px; margin: 40px 0 12px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); }
+    h3 { font-size: 18px; margin: 22px 0 6px; }
+    p { margin: 0 0 12px; }
+
+    .direction { margin: 0 0 22px; }
+    .direction h3 { margin-top: 18px; }
+    details.relwork { margin: 4px 0 8px; font-size: 15.5px; }
+    details.relwork summary { cursor: pointer; font-style: italic; color: var(--muted); }
+    details.relwork summary:hover { color: var(--accent); }
+    details.relwork ul { list-style: none; padding-left: 4px; margin: 6px 0 0; }
+    details.relwork li { margin-bottom: 4px; }
+    a.ref { white-space: nowrap; }
+    .award { color: var(--highlight); font-weight: bold; }
+
+    ul.news, ul.plain { padding-left: 20px; margin: 0; }
+    ul.news li, ul.plain li { margin-bottom: 6px; }
+    .date { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+    .note { color: var(--muted); font-size: 15px; margin-bottom: 14px; }
+    .pub { margin: 0 0 16px; position: relative; padding-left: 2.6em; }
+    .pub .num { position: absolute; left: 0; top: 0; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .pub .title { font-weight: bold; }
+    .pub .venue i { font-style: italic; }
+    .pub .award { color: var(--highlight); font-weight: bold; }
+    .pub .links a { font-size: 15px; margin-right: 8px; }
+    .me { font-weight: bold; }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .page { padding: 24px 16px 60px; }
+      header { flex-direction: column-reverse; align-items: flex-start; }
+      header img { width: 130px; height: 130px; }
+      header h1 { font-size: 27px; }
+    }
+  </style>
 </head>
 
-
-<p>
-
-    <table width=“100%" border="0" cellspacing=“5” cellpadding=“55”>
-      <tr>
-        <td width=“100%" align=“left”><h1 style=“float:left;”><b>Yatong Chen (陈雅桐)  &nbsp <br></b></h1>
-            <h4 style=“float:top;”> Ph.D. <br> Max Planck Institute for Intelligent Systems</h4><h5><!-- ychen592 [at] ucsc.edu<br> 
-                <a href="https://scholar.google.com/citations?user=yoExm_UAAAAJ&hl=en">[Google Scholar]</a>
-                <a href="https://www.linkedin.com/in/yatong-chen-184863126/">[LinkedIn]</a>
-                <a href="https://twitter.com/YatongChen">[Twitter]</a>
-            </h5></td> -->
-
-<!--             <td align=“right”><br><br><img src="profile.jpg" 
-                style=“max-width:1%;max-height:1%;text-indent: 0.5em” alt=“” />
-            </td> --> 
-            <td style="text-align: right;">
-                <br><br>
-                <img src="2024-profile-pic.jpg" style="max-width: 200px; max-height: 200px;" alt="" />
-            </td>
-        </tr>
-    </table>
-
-
-    <h3 id=‘#about’><b>About Me</b></h3>
-    <ul>
-        I am a Research Group Leader in the Social Foundations of Computation Department at the Max Planck Institute for Intelligent Systems in Tübingen, Germany, hosted by Professor <a href=https://www.mrtz.org/> Moritz Hardt</a>. 
-        I study AI evaluation and algorithmic decision-making systems in which people, models, and institutions interact strategically. My work aims to understand how incentives and decision rules shape behavior and outcomes in these systems, and to design mechanisms that remain robust under strategic adaptation. Currently, I am particularly interested in these questions in LLM evaluation ecosystems.
-        <br>
-
-        <br>
-        I completed my Ph.D. from the Computer Science and Engineering Department at the University of California, Santa Cruz, where I was fortunate to be advised by Professor <a href=http://www.yliuu.com/> Yang Liu</a>. I was supported by the Chancellor’s Dissertation-Year Fellowship. I was a student researcher at Google Brain hosted by <a href=https://sites.google.com/view/eamid/> Ehsan Amid </a> and <a href=https://research.google/people/105802/> Rohan Anil </a>in the summer of 2022. 
-
-        I received a MS in Statistics at Stanford University in 2019, where I worked with Professor <a href=http://stanford.edu/~jugander/> Johan Ugander</a> on node classification problem using semi-supervised learning.
-        Before that, I received my BS in Energy and Resources Engineering and BA in Economics from Peking University in 2016.    
-
-        <br>
-        <br>
-
-        Here's my <a href="https://drive.google.com/file/d/1t35fZP-PxCJirYuo7nT11YlQTszAMFpg/view?usp=sharing">CV</a> (last updated July 2026) and <a href="#contact">contact info.</a>
-
-        <br>
-        <br>
-
-        <h4><b>News:</b></h4>
-
-        <ul> [July 2026] I will give two talks on my recent paper about incentives in LLM leaderboards: one at Machine Learning for Science in Tübingen and another at WALE in Limnos, Greece!
-        </ul> 
-
-
-
-    </ul>
-    <br>
-
-<!--    <h3 id=‘Preprints’><b>Preprints</b></h3>
-
-    (* equal contribution)
-    <br>  
-   <br>  
-
-    <ul>
-        <b>To Give or Not to Give? The Impacts of Strategically Withheld Recourse</b><br>
-        <b>Yatong Chen</b>, Andrew Estornell, Yevgeniy Vorobeychik and Yang Liu. <br>
-         <i>In Submission. </i> (Preliminary version at NeurIPS 2023 Workshop on Algorithmic Fairness through the Lens of Time).<br>           
-    </ul>  
-    <br>  -->
-
-
-
-
-    <h3 id=‘Publications’><b>Publications</b></h3>
-    
-     (* equal contribution)
-    <br>
-    <br> 
-
-    <ul>
-        <b>Leaderboard Incentives: Model Rankings under Strategic Post-Training</b><br>
-        <b>Yatong Chen</b>, Guanhua Zhang, and Moritz Hardt. <br>
-         <i>ICML 2026. </i> <br>
-        <a href="https://arxiv.org/pdf/2603.08371v1">[arXiv]</a><br> 
-    </ul>  
-    <br>  
-
-    <ul>
-        <b>ROC-n-reroll: How verifier imperfection affects test-time scaling</b><br>
-        Florian E Dorner, <b>Yatong Chen*</b>, André F. Cruz*, and Fanny Yang. <br>
-         <i>ICLR 2026. </i> <br>
-         <a href="https://arxiv.org/abs/2507.12399">[arXiv]</a><br>        
-    </ul>  
-    <br>  
-
-    <ul>
-        <b>Strategic Hypothesis Testing</b><br>
-        <b>Yatong Chen*</b>, Safwan Hossain*, and Yiling Chen. <br>
-         <i>NeurIPS 2025. </i>  </i> <b style="color:blue;">Spotlight, top 3%.</b> <br>
-         <a href="https://arxiv.org/pdf/2508.03289">[arXiv]</a><br>        
-    </ul>  
-    <br>  
-
-    <ul>
-        <b>To Give or Not to Give? The Impacts of Strategically Withheld Recourse</b><br>
-        <b>Yatong Chen</b>, Andrew Estornell, Yevgeniy Vorobeychik and Yang Liu. <br>
-         <i>AISTATS 2025. </i> (Preliminary version at NeurIPS 2023 Workshop on Algorithmic Fairness through the Lens of Time).<br>      
-         <a href="https://arxiv.org/abs/2504.05891">[arXiv]</a><br>      
-    </ul>  
-    <br> 
-
-
-    <ul>
-        <b>Performative Prediction with Bandit Feedback: Learning through Reparameterization</b><br>
-        <b>Yatong Chen</b>, Wei Tang, Chien-Ju Ho and Yang Liu. <br>
-         <i>ICML 2024. </i> <br>   
-         <a href="https://arxiv.org/abs/2305.01094">[ArXiv]</a>           
-    </ul>  
-    <br> 
-
-    <ul>     
-        <b>Learning to Incentivize Improvements from Strategic Agents </b> <br>                       
-        <b>Yatong Chen</b>, Jialu Wang and Yang Liu. <br>
-        <i>TMLR. </i> (Preliminary version at ICML 2021 Workshop on Algorithmic Recourse, <b style="color:blue;">Best Paper Award</b>). <br>
-        <a href="https://openreview.net/pdf?id=W98AEKQ38Y">[paper]</a>
-        <a href="https://github.com/UCSC-REAL/LightTouch">[code]</a>
-    </ul>  
-    <br> 
-
-    <ul>
-        <b>Model Transferability with Responsive Decision Subjects </b> <br>
-        <b>Yatong Chen</b>, Zeyu Tang, Kun Zhang and Yang Liu. <br> 
-        <i>ICML 2023.</i> (Preliminary version at ICML 2022 Workshop on Adversarial Machine Learning Frontiers, <b style="color:blue;">Best Paper Award</b>).<br>
-        <a href="https://proceedings.mlr.press/v202/chen23y/chen23y.pdf">[paper]</a>
-        <a href="https://docs.google.com/presentation/d/1zpg0tF43P7iiqZQ-6SPXj1weeCj-GciowmwYaD3SV1Q/edit?usp=sharing">[talk slides]</a>
-       <a href="https://github.com/UCSC-REAL/Model_Transferability">[code]</a>
-
-    </ul>
-    <br> 
-
-
-
-    <ul>
-        <b> Incentivizing Recourse through Auditing in Strategic Classification</b> <br>
-        Andrew Estornell, <b>Yatong Chen</b>, Sanmay Das, Yang Liu, Yevgeniy  Vorobeychik .  <br>
-        <i> IJCAI 2023. </i> <br> 
-        <a href="https://www.ijcai.org/proceedings/2023/0045.pdf">[paper]</a>
-              
-
-    </ul> 
-    <br>
-<!--     <ul>
-        <b>Fast Implicit Constrained Optimization of Non-decomposable Objectives for Deep Networks</b><br>
-        <b>Yatong Chen</b>, Abhishek Kumar, Yang Liu, Ehsan Amid. <br>
-         <i>Has it Trained Yet? NeurIPS 2022 Workshop. </i> <br>   
-         <a href="https://openreview.net/pdf?id=u8kFmPafOc">[paper]</a><br>            
-    </ul>  
-    <br> 
-
-    <ul>
-        <b>Fishy: Layerwise Fisher Approximation for Higher-order Neural Network Optimization</b><br>
-        Abel Peirson*, Ehsan Amid*, <b>Yatong Chen</b>, Vladimir Feinberg, Manfred K Warmuth, Rohan Anil. <br>
-         <i>Has it Trained Yet? NeurIPS 2022 Workshop. </i> <br>  
-         <a href="https://openreview.net/pdf?id=cScb-RrBQC">[paper]</a><br>            
-    </ul>  
-    <br>  -->
-
-
-
-
-
-    <ul>
-        <b>Tier Balancing: Towards Dynamic Fairness over Underlying Causal Factors</b> <br>
-        Zeyu Tang, <b>Yatong Chen</b>, Yang Liu and Kun Zhang.  <br>
-        <i> ICLR 2023. </i> (Preliminary version at NeurIPS 2022 Workshop on Algorthmic Fairness Through the Lens of Causality and Privacy).<br>
-        <a href="https://arxiv.org/abs/2301.08987">[paper]</a><br>
-
-    </ul> 
-    <br>
-
-    <ul>
-        <b>Fair Transferability Subject to Distribution Shift</b> <br>
-        <b>Yatong Chen</b>*, Reilly Raab*, Jialu Wang and Yang Liu.  <br>
-        <i> Neurips 2022. </i> (Preliminary version at NeurIPS 2021 Workshop on Algorithmic Fairness through the Lens of Causality and Robustness).<br>
-        <a href="https://arxiv.org/pdf/2206.00129.pdf">[arXiv]</a><br>
-
-    </ul> 
-    <br>
-
-    <ul>
-        <b>Metric-Fair Classifier Derandomization</b><br>
-        Jimmy Wu, <b>Yatong Chen</b> and Yang Liu. <br>
-         <i>ICML 2022. </i> Spotlight Presentation.<br>
-        <a href="https://proceedings.mlr.press/v162/wu22a.html">[paper]</a>
-        <a href="https://icml.cc/media/icml-2022/Slides/17055_rWJGgs5.pdf">[talk slides]</a>                           
-    </ul>  
-    <br> 
-
-
-                   
-
-
-    <ul>
-        <b>Decoupled Smoothing on Graphs</b> <br> 
-        Alex Chin, <b>Yatong Chen</b>, Kristen M. Altenburger and Johan Ugander. <br> 
-        <i>WWW 2019. </i> <b style="color:blue;">Oral Presentation, top 5%.</b> <br>
-        <a href="https://dl.acm.org/citation.cfm?id=3313748">[paper]</a>
-        <a href="https://github.com/YatongChen/decoupled_smoothing_on_graphs">[code]</a>
-        <a href=" http://stanford.edu/~jugander/papers/www19-decoupled-slides.pdf">[talk slides]</a>
-    </ul>
-    <br>
-
-</ul>
-
-
- <h3 id=‘Workshop’><b>Workshop Papers</b></h3>
-    <br>   
-
-    <ul>
-        <b>Fast Implicit Constrained Optimization of Non-decomposable Objectives for Deep Networks</b><br>
-        <b>Yatong Chen</b>, Abhishek Kumar, Yang Liu, Ehsan Amid. <br>
-         <i>Has it Trained Yet? NeurIPS 2022 Workshop. </i> <br>   
-         <a href="https://openreview.net/pdf?id=u8kFmPafOc">[paper]</a><br>            
-    </ul>  
-    <br> 
-
-    <ul>
-        <b>Fishy: Layerwise Fisher Approximation for Higher-order Neural Network Optimization</b><br>
-        Abel Peirson*, Ehsan Amid*, <b>Yatong Chen</b>, Vladimir Feinberg, Manfred K Warmuth, Rohan Anil. <br>
-         <i>Has it Trained Yet? NeurIPS 2022 Workshop. </i> <br>  
-         <a href="https://openreview.net/pdf?id=cScb-RrBQC">[paper]</a><br>            
-    </ul>  
-    <br> 
-
-    <ul>
-        <b>Decoupled Smoothing In Probabilistic Soft Logic </b> <br> 
-        <b>Yatong Chen</b>*, Bryan Tor*, Eriq Augustine and Lise Getoor. <br>
-        <i>15th International Workshop on Mining and Learning with Graphs.</i> <br> 
-        <a href="http://www.mlgworkshop.org/2020/papers/MLG2020_paper_31.pdf">[paper]</a>
-        <a href=" https://docs.google.com/presentation/d/1kqzejzGO-PLFPX0_oYRYmP-U3qFvr4SjZPKYpsbmIRI/edit?usp=sharing">[talk slides]</a>
-    </ul>
-
-    <br>   
-
-
-<h3 id=‘distinctions’><b>Distinctions</b></h3>
-
-<ul>
-Chancellor’s Dissertation-Year Fellowship <b style="color:blue;">(only one recipient in the School of Engineering)</b>, 2023, UC Santa Cruz
-</ul>
-
-<ul>
-    Best Paper Award, ICML Workshop on New Frontiers in Adversarial Machine Learning (AdvML), 2022
-</ul>
-<ul>
-    Finalist, Google PhD Fellowship Program, 2022
-</ul>
-<ul>
-    Best Paper Award, ICML Workshop on Algorithmic Recourse, 2021
-</ul>
-<ul>
-    Baskin Engineering Fellowship for Anti-Racism Research (FARR), 2021, UC Santa Cruz  
-</ul>
-<ul>                               
-    Regents Fellowship, 2019, UC Santa Cruz
-</ul>
-<br>
-</ul>
-<br>
-
-
-<h3 id="talk"><b>Selective Talks</b></h3>
-
-<ul>
-    <li>
-        <b>Workshop on Algorithms for Learning and Economics (WALE)</b>, Limnos, Greece.
-        Invited talk on <i>Why LLM Leaderboards Create Bad Incentives and How to Fix Them</i>.
-        July 2026.
-        <a href="https://wale.gr/2026/">[link]</a>
-    </li>
-
-    <li>
-        <b>Machine Learning in Science Conference</b>, Tübingen, Germany.
-        Invited talk on <i>Why LLM Leaderboards Create Bad Incentives and How to Fix Them</i>.
-        July 2026.
-    </li>
-
-    <li>
-        <b>ETH AI Center Academic Talk Series (AICATS)</b>, Zürich, Switzerland.
-        Invited talk on <i>Why LLM Leaderboards Create Bad Incentives and How to Fix Them</i>.
-        March 2026.
-    </li>
-
-    <li>
-        <b>Tübingen Women in Machine Learning (TWiML)</b>, Tübingen, Germany.
-        Invited talk on <i>Why LLM Leaderboards Create Bad Incentives and How to Fix Them</i>.
-        March 2026.
-        <a href="https://www.linkedin.com/posts/twiml-tubingen-women-in-ml_we-are-pleased-to-introduce-the-fourth-speaker-activity-7432047314870935552-BRBp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB8YOzQB85v1HYFXouONj61bbpQBnws5yxc">[link]</a>
-    </li>
-
-    <li>
-        <b>Friday Talks at the Tübingen AI Center</b>, Tübingen, Germany.
-        Talk on <i>Strategic Hypothesis Testing</i>.
-        November 2025.
-    </li>
-
-    <li>
-        <b>University of Pennsylvania Theory Seminar</b>, Philadelphia, USA.
-        Invited talk on <i>Metric-Fair Classifier Derandomization</i>.
-        April 12, 2024.
-    </li>
-
-
-    <li>
-        <b>International Conference on Machine Learning (ICML)</b>, Baltimore, USA.
-        Talk on <i>Metric-Fair Classifier Derandomization</i>.
-        July 19, 2022.
-        <a href="https://icml.cc/virtual/2022/spotlight/17056">[link]</a>
-    </li>
-
-    <li>
-        <b>Workshop on New Frontiers in Adversarial Machine Learning (AdvML Frontiers)</b>,
-        ICML, Baltimore, USA.
-        Talk on <i>Model Transferability With Responsive Decision Subjects</i>.
-        July 22, 2022.
-        <a href="https://advml-frontier.github.io/">[link]</a>
-    </li>
-
-    <li>
-        <b>Workshop on Algorithmic Recourse</b>, ICML, virtual.
-        Spotlight talk on <i>Learning Classifiers that Incentivize Constructive Adaptation</i>.
-        July 24, 2021.
-        <a href="https://sites.google.com/view/recourse21/">[link]</a>
-    </li>
-
-    <li>
-        <b>Institute for Foundations of Data Science (IFDS) Ethics Seminar</b>.
-        Invited talk on <i>Learning Classifiers that Incentivize Constructive Adaptation</i>.
-        May 2021.
-    </li>
-
-    <li>
-        <b>Workshop on Consequential Decision Making in Dynamic Environments</b>,
-        NeurIPS, virtual.
-        Talk on <i>Learning Classifiers that Incentivize Constructive Adaptation</i>.
-        December 12, 2020.
-        <a href="https://dynamicdecisions.github.io/">[link]</a>
-    </li>
-
-
-    <li>
-        <b>UCSC Theory Reading Group</b>, Santa Cruz, USA.
-        Invited talk on <i>Decoupled Smoothing on Graphs</i>.
-        October 2019.
-    </li>
-
-    <li>
-        <b>The Web Conference</b>, San Francisco, USA.
-        Talk on <i>Decoupled Smoothing on Graphs</i>.
-        May 17, 2019.
-        <a href="https://www2019.thewebconf.org/">[link]</a>
-    </li>
-</ul>
-
-<br>
-<br>
-
-
-
-<h3 id="contact"><b>Contact Information</b></h3>
-
-<ul>
-
-Email: yatong.chen [at] tuebingen.mpg.de, ychen592 [at] ucsc.edu
-<br>
-
-<a href="https://scholar.google.com/citations?user=yoExm_UAAAAJ&hl=en">[Google Scholar]</a>
-<a href="https://www.linkedin.com/in/yatong-chen-184863126/">[LinkedIn]</a>
-<a href="https://twitter.com/YatongChen">[Twitter]</a>
-</ul>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-</p>
-
-
-    <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="js/ie10-viewport-bug-workaround.js"></script>
-    </body>
-    </html>
+<body>
+<div class="page">
+
+  <header>
+    <div>
+      <h1>Yatong Chen (陈雅桐)</h1>
+      <p class="role">Research Group Leader, Social Foundations of Computation<br>
+        Max Planck Institute for Intelligent Systems, Tübingen</p>
+      <div class="links">
+        <a href="https://drive.google.com/file/d/1t35fZP-PxCJirYuo7nT11YlQTszAMFpg/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>
+        <a href="https://scholar.google.com/citations?user=yoExm_UAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://twitter.com/YatongChen" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://www.linkedin.com/in/yatong-chen-184863126/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#contact">Email</a>
+      </div>
+    </div>
+    <img src="2024-profile-pic.jpg" alt="Photo of Yatong Chen">
+  </header>
+
+  <div class="banner">
+    <b>I am on the 2026–27 academic job market</b>, looking for tenure-track faculty positions.
+    Here is my <a href="https://drive.google.com/file/d/1t35fZP-PxCJirYuo7nT11YlQTszAMFpg/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>;
+    my research statement is available on request.
+    <!-- TODO: once the research statement is public, replace "available on request" with a link, e.g.
+         <a href="research-statement.pdf">research statement</a> -->
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#news">News</a>
+    <a href="#publications">Publications</a>
+    <a href="#talks">Talks</a>
+    <a href="#teaching">Teaching &amp; Service</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ================================================================ -->
+  <h2 id="about">About Me</h2>
+
+  <p>
+    I am a Research Group Leader in the Social Foundations of Computation department at the
+    Max Planck Institute for Intelligent Systems in Tübingen, Germany, hosted by
+    <a href="https://www.mrtz.org/" target="_blank" rel="noopener noreferrer">Moritz Hardt</a>.
+  </p>
+  <p>
+    I build the theoretical foundations for <b>incentive-aware evaluation</b>.
+    I study AI evaluation and algorithmic decision-making systems in which people, models, and institutions
+    interact strategically. Currently, I am particularly interested in LLM evaluation ecosystems and in
+    incentives in scientific discovery.
+  </p>
+  <p>
+    I received my Ph.D. in Computer Science and Engineering from the University of California, Santa Cruz,
+    advised by <a href="http://www.yliuu.com/" target="_blank" rel="noopener noreferrer">Yang Liu</a>, and was supported by the Chancellor’s Dissertation-Year
+    Fellowship. In summer 2022 I was a student researcher at Google Brain, hosted by
+    <a href="https://sites.google.com/view/eamid/" target="_blank" rel="noopener noreferrer">Ehsan Amid</a> and
+    <a href="https://research.google/people/105802/" target="_blank" rel="noopener noreferrer">Rohan Anil</a>.
+    Before that, I received an M.S. in Statistics from Stanford University (2019), advised by <a href="http://stanford.edu/~jugander/" target="_blank" rel="noopener noreferrer">Johan Ugander</a>, and a B.S. in Energy
+    and Resources Engineering and B.A. in Economics from Peking University (2016).
+  </p>
+
+  <!-- ================================================================ -->
+  <h2 id="research">Research</h2>
+
+  <p>
+    Leaderboards, drug-approval thresholds, and lending models all decide who gets ranked, approved, or
+    rewarded, and the parties they evaluate adapt to them. I treat <b>evaluation and decision-making as
+    mechanisms</b>: using game theory, mechanism design, statistics, and machine learning, I characterize how
+    these rules shape behavior and design rules that prevent reward hacking and reward genuine improvement, under the
+    constraints evaluators face in practice, such as imperfect verifiers and costly experiments.
+    My work spans AI evaluation [<a class="ref" href="#pub-leaderboard">1</a>, <a class="ref" href="#pub-roc">2</a>],
+    scientific discovery and regulation [<a class="ref" href="#pub-sht">3</a>, <a class="ref" href="#pub-contract">13</a>], algorithmic recourse and lending
+    [<a class="ref" href="#pub-withheld">4</a>, <a class="ref" href="#pub-improve">6</a>, <a class="ref" href="#pub-audit">8</a>], and fairness in deployed systems [<a class="ref" href="#pub-tier">9</a>, <a class="ref" href="#pub-fairtransfer">10</a>, <a class="ref" href="#pub-derand">11</a>].
+  </p>
+  <p>I’m especially excited about:</p>
+
+  <div class="direction">
+    <h3>Incentive-aware AI evaluation</h3>
+    <p>
+      Benchmarks and leaderboards steer what model developers build, and developers in turn shape which
+      benchmarks the field pays attention to. I want to understand this feedback loop and design evaluation
+      protocols under which climbing a leaderboard requires real capability gains. For example, I study why
+      <i>benchmaxxing</i> persists, and what alternative evaluation mechanisms can elicit model rankings that
+      reflect true capabilities [<a class="ref" href="#pub-leaderboard">1</a>].
+    </p>
+    <details class="relwork">
+      <summary>Relevant work on incentives and guarantees in AI evaluation</summary>
+      <ul>
+        <li><a class="ref" href="#pub-leaderboard">[1]</a> <a href="https://arxiv.org/abs/2603.08371" target="_blank" rel="noopener noreferrer">Leaderboard Incentives: Model Rankings under Strategic Post-Training.</a> ICML 2026</li>
+        <li><a class="ref" href="#pub-roc">[2]</a> <a href="https://arxiv.org/abs/2507.12399" target="_blank" rel="noopener noreferrer">ROC-n-reroll: How Verifier Imperfection Affects Test-Time Scaling.</a> ICLR 2026</li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="direction">
+    <h3>Incentive design for scientific discovery</h3>
+    <p>
+      Statistical tests act as contracts between those who produce evidence and those who act on it, such as
+      regulators, journals, and funders. I study how significance thresholds and testing protocols determine
+      which experiments get run, and how to design them so that evidence stays credible when firms and
+      researchers respond strategically. For example, why might effective drugs for small patient populations, such
+      as orphan drugs, never reach the market [<a class="ref" href="#pub-sht">3</a>]?
+    </p>
+    <details class="relwork">
+      <summary>Relevant work on strategic hypothesis testing and statistical contracts</summary>
+      <ul>
+        <li><a class="ref" href="#pub-sht">[3]</a> <a href="https://arxiv.org/abs/2508.03289" target="_blank" rel="noopener noreferrer">Strategic Hypothesis Testing.</a> NeurIPS 2025 <span class="award">Spotlight</span></li>
+        <li><a class="ref" href="#pub-contract">[13]</a> The Price of Sample-Size-Agnostic Contracts. NeurIPS 2026 Workshop on E-Values: From Statistics to ML</li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="direction">
+    <h3>Responsible decision-making under strategic adaptation</h3>
+    <p>
+      Algorithms increasingly decide who gets a loan, a job, or a public service, and the people affected
+      respond to them. I design decision rules and learning algorithms that anticipate these responses and steer
+      them toward genuine improvement rather than manipulation. Algorithmic recourse is one example: telling a
+      rejected applicant what to change helps only if the institution has a reason to offer it and the advice leads
+      to real improvement [<a class="ref" href="#pub-withheld">4</a>, <a class="ref" href="#pub-improve">6</a>, <a class="ref" href="#pub-audit">8</a>].
+    </p>
+    <details class="relwork">
+      <summary>Relevant work on strategic classification, recourse, and performative prediction</summary>
+      <ul>
+        <li><a class="ref" href="#pub-improve">[6]</a> <a href="https://openreview.net/pdf?id=W98AEKQ38Y" target="_blank" rel="noopener noreferrer">Learning to Incentivize Improvements from Strategic Agents.</a> TMLR; ICML 2021 Workshop on Algorithmic Recourse <span class="award">Best Paper</span></li>
+        <li><a class="ref" href="#pub-transfer">[7]</a> <a href="https://proceedings.mlr.press/v202/chen23y/chen23y.pdf" target="_blank" rel="noopener noreferrer">Model Transferability with Responsive Decision Subjects.</a> ICML 2023; ICML 2022 AdvML Frontiers Workshop <span class="award">Best Paper</span></li>
+        <li><a class="ref" href="#pub-withheld">[4]</a> <a href="https://arxiv.org/abs/2504.05891" target="_blank" rel="noopener noreferrer">To Give or Not to Give? The Impacts of Strategically Withheld Recourse.</a> AISTATS 2025</li>
+        <li><a class="ref" href="#pub-performative">[5]</a> <a href="https://arxiv.org/abs/2305.01094" target="_blank" rel="noopener noreferrer">Performative Prediction with Bandit Feedback: Learning through Reparameterization.</a> ICML 2024</li>
+        <li><a class="ref" href="#pub-audit">[8]</a> <a href="https://www.ijcai.org/proceedings/2023/0045.pdf" target="_blank" rel="noopener noreferrer">Incentivizing Recourse through Auditing in Strategic Classification.</a> IJCAI 2023</li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="direction">
+    <h3>Aligning algorithmic decisions with societal values</h3>
+    <p>
+      A decision system is aligned only if it keeps serving the values it was designed for after deployment, as
+      the populations it serves change and the people it affects respond. I study how fairness guarantees hold up
+      over time and across populations, and how to keep fair decision rules practical to deploy
+      [<a class="ref" href="#pub-tier">9</a>, <a class="ref" href="#pub-fairtransfer">10</a>, <a class="ref" href="#pub-derand">11</a>].
+    </p>
+    <details class="relwork">
+      <summary>Relevant work on fairness under distribution shift and dynamics</summary>
+      <ul>
+        <li><a class="ref" href="#pub-fairtransfer">[10]</a> <a href="https://arxiv.org/abs/2206.00129" target="_blank" rel="noopener noreferrer">Fair Transferability Subject to Distribution Shift.</a> NeurIPS 2022</li>
+        <li><a class="ref" href="#pub-tier">[9]</a> <a href="https://arxiv.org/abs/2301.08987" target="_blank" rel="noopener noreferrer">Tier Balancing: Towards Dynamic Fairness over Underlying Causal Factors.</a> ICLR 2023</li>
+        <li><a class="ref" href="#pub-derand">[11]</a> <a href="https://proceedings.mlr.press/v162/wu22a.html" target="_blank" rel="noopener noreferrer">Metric-Fair Classifier Derandomization.</a> ICML 2022 <span class="award">Spotlight</span></li>
+      </ul>
+    </details>
+  </div>
+
+  <!-- ================================================================ -->
+  <h2 id="news">News</h2>
+  <ul class="news">
+    <li><span class="date">[Upcoming]</span> I will give a talk at the Max Planck Institute for Software Systems (MPI-SWS). <!-- TODO: add date --></li>
+    <li><span class="date">[Jul 2026]</span> Presented <i>Leaderboard Incentives</i> at ICML 2026, and gave
+      invited talks on incentives in LLM leaderboards at Machine Learning in Science (Tübingen) and WALE (Limnos, Greece).</li>
+    <li><span class="date">[May 2026]</span> <i><a href="https://arxiv.org/abs/2603.08371" target="_blank" rel="noopener noreferrer">Leaderboard Incentives: Model Rankings under Strategic Post-Training</a></i>, with Guanhua Zhang and Moritz Hardt, was accepted to ICML 2026! <!-- TODO: confirm month of acceptance --></li>
+    <li><span class="date">[2026]</span> <i>ROC-n-reroll</i>, on how verifier imperfection limits test-time scaling, appeared at ICLR 2026.</li>
+    <li><span class="date">[2025]</span> <i>Strategic Hypothesis Testing</i> was selected as a NeurIPS 2025 Spotlight (top 3%).</li>
+  </ul>
+
+  <!-- ================================================================ -->
+  <h2 id="publications">Publications</h2>
+  <p class="note">* equal contribution</p>
+
+  <div class="pub" id="pub-leaderboard">
+    <span class="num">[1]</span>
+    <div class="title">Leaderboard Incentives: Model Rankings under Strategic Post-Training</div>
+    <div><span class="me">Yatong Chen</span>, Guanhua Zhang, and Moritz Hardt.</div>
+    <div class="venue"><i>ICML 2026.</i></div>
+    <div class="links"><a href="https://arxiv.org/abs/2603.08371" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      <!-- TODO: add [slides] (upload slides) and [code] (ask Guanhua) -->
+    </div>
+  </div>
+
+  <div class="pub" id="pub-roc">
+    <span class="num">[2]</span>
+    <div class="title">ROC-n-reroll: How Verifier Imperfection Affects Test-Time Scaling</div>
+    <div>Florian E. Dorner, <span class="me">Yatong Chen</span>*, André F. Cruz*, and Fanny Yang.</div>
+    <div class="venue"><i>ICLR 2026.</i></div>
+    <div class="links"><a href="https://arxiv.org/abs/2507.12399" target="_blank" rel="noopener noreferrer">[arXiv]</a></div>
+  </div>
+
+  <div class="pub" id="pub-sht">
+    <span class="num">[3]</span>
+    <div class="title">Strategic Hypothesis Testing</div>
+    <div><span class="me">Yatong Chen</span>*, Safwan Hossain*, and Yiling Chen.</div>
+    <div class="venue"><i>NeurIPS 2025.</i> <span class="award">Spotlight, top 3%.</span></div>
+    <div class="links"><a href="https://arxiv.org/abs/2508.03289" target="_blank" rel="noopener noreferrer">[arXiv]</a></div>
+  </div>
+
+  <div class="pub" id="pub-withheld">
+    <span class="num">[4]</span>
+    <div class="title">To Give or Not to Give? The Impacts of Strategically Withheld Recourse</div>
+    <div><span class="me">Yatong Chen</span>, Andrew Estornell, Yevgeniy Vorobeychik, and Yang Liu.</div>
+    <div class="venue"><i>AISTATS 2025.</i> Preliminary version at the NeurIPS 2023 Workshop on Algorithmic Fairness through the Lens of Time.</div>
+    <div class="links"><a href="https://arxiv.org/abs/2504.05891" target="_blank" rel="noopener noreferrer">[arXiv]</a></div>
+  </div>
+
+  <div class="pub" id="pub-performative">
+    <span class="num">[5]</span>
+    <div class="title">Performative Prediction with Bandit Feedback: Learning through Reparameterization</div>
+    <div><span class="me">Yatong Chen</span>, Wei Tang, Chien-Ju Ho, and Yang Liu.</div>
+    <div class="venue"><i>ICML 2024.</i></div>
+    <div class="links"><a href="https://arxiv.org/abs/2305.01094" target="_blank" rel="noopener noreferrer">[arXiv]</a></div>
+  </div>
+
+  <div class="pub" id="pub-improve">
+    <span class="num">[6]</span>
+    <div class="title">Learning to Incentivize Improvements from Strategic Agents</div>
+    <div><span class="me">Yatong Chen</span>, Jialu Wang, and Yang Liu.</div>
+    <div class="venue"><i>Transactions on Machine Learning Research (TMLR).</i> Preliminary version at the ICML 2021 Workshop on Algorithmic Recourse, <span class="award">Best Paper Award</span>.</div>
+    <div class="links">
+      <a href="https://openreview.net/pdf?id=W98AEKQ38Y" target="_blank" rel="noopener noreferrer">[paper]</a>
+      <a href="https://github.com/UCSC-REAL/LightTouch" target="_blank" rel="noopener noreferrer">[code]</a>
+    </div>
+  </div>
+
+  <div class="pub" id="pub-transfer">
+    <span class="num">[7]</span>
+    <div class="title">Model Transferability with Responsive Decision Subjects</div>
+    <div><span class="me">Yatong Chen</span>, Zeyu Tang, Kun Zhang, and Yang Liu.</div>
+    <div class="venue"><i>ICML 2023.</i> Preliminary version at the ICML 2022 Workshop on New Frontiers in Adversarial Machine Learning, <span class="award">Best Paper Award</span>.</div>
+    <div class="links">
+      <a href="https://proceedings.mlr.press/v202/chen23y/chen23y.pdf" target="_blank" rel="noopener noreferrer">[paper]</a>
+      <a href="https://docs.google.com/presentation/d/1zpg0tF43P7iiqZQ-6SPXj1weeCj-GciowmwYaD3SV1Q/edit?usp=sharing" target="_blank" rel="noopener noreferrer">[slides]</a>
+      <a href="https://github.com/UCSC-REAL/Model_Transferability" target="_blank" rel="noopener noreferrer">[code]</a>
+    </div>
+  </div>
+
+  <div class="pub" id="pub-audit">
+    <span class="num">[8]</span>
+    <div class="title">Incentivizing Recourse through Auditing in Strategic Classification</div>
+    <div>Andrew Estornell, <span class="me">Yatong Chen</span>, Sanmay Das, Yang Liu, and Yevgeniy Vorobeychik.</div>
+    <div class="venue"><i>IJCAI 2023.</i></div>
+    <div class="links"><a href="https://www.ijcai.org/proceedings/2023/0045.pdf" target="_blank" rel="noopener noreferrer">[paper]</a></div>
+  </div>
+
+  <div class="pub" id="pub-tier">
+    <span class="num">[9]</span>
+    <div class="title">Tier Balancing: Towards Dynamic Fairness over Underlying Causal Factors</div>
+    <div>Zeyu Tang, <span class="me">Yatong Chen</span>, Yang Liu, and Kun Zhang.</div>
+    <div class="venue"><i>ICLR 2023.</i> Preliminary version at the NeurIPS 2022 Workshop on Algorithmic Fairness through the Lens of Causality and Privacy.</div>
+    <div class="links"><a href="https://arxiv.org/abs/2301.08987" target="_blank" rel="noopener noreferrer">[arXiv]</a></div>
+  </div>
+
+  <div class="pub" id="pub-fairtransfer">
+    <span class="num">[10]</span>
+    <div class="title">Fair Transferability Subject to Distribution Shift</div>
+    <div><span class="me">Yatong Chen</span>*, Reilly Raab*, Jialu Wang, and Yang Liu.</div>
+    <div class="venue"><i>NeurIPS 2022.</i> Preliminary version at the NeurIPS 2021 Workshop on Algorithmic Fairness through the Lens of Causality and Robustness.</div>
+    <div class="links"><a href="https://arxiv.org/abs/2206.00129" target="_blank" rel="noopener noreferrer">[arXiv]</a></div>
+  </div>
+
+  <div class="pub" id="pub-derand">
+    <span class="num">[11]</span>
+    <div class="title">Metric-Fair Classifier Derandomization</div>
+    <div>Jimmy Wu, <span class="me">Yatong Chen</span>, and Yang Liu.</div>
+    <div class="venue"><i>ICML 2022.</i> <span class="award">Spotlight.</span></div>
+    <div class="links">
+      <a href="https://proceedings.mlr.press/v162/wu22a.html" target="_blank" rel="noopener noreferrer">[paper]</a>
+      <a href="https://icml.cc/media/icml-2022/Slides/17055_rWJGgs5.pdf" target="_blank" rel="noopener noreferrer">[slides]</a>
+    </div>
+  </div>
+
+  <div class="pub" id="pub-smoothing">
+    <span class="num">[12]</span>
+    <div class="title">Decoupled Smoothing on Graphs</div>
+    <div>Alex Chin, <span class="me">Yatong Chen</span>, Kristen M. Altenburger, and Johan Ugander.</div>
+    <div class="venue"><i>WWW 2019.</i> <span class="award">Oral, top 5%.</span></div>
+    <div class="links">
+      <a href="https://dl.acm.org/citation.cfm?id=3313748" target="_blank" rel="noopener noreferrer">[paper]</a>
+      <a href="https://github.com/YatongChen/decoupled_smoothing_on_graphs" target="_blank" rel="noopener noreferrer">[code]</a>
+      <a href="http://stanford.edu/~jugander/papers/www19-decoupled-slides.pdf" target="_blank" rel="noopener noreferrer">[slides]</a>
+    </div>
+  </div>
+
+  <h3>Workshop Papers</h3>
+
+  <div class="pub" id="pub-contract">
+    <span class="num">[13]</span>
+    <div class="title">The Price of Sample-Size-Agnostic Contracts</div>
+    <div>Simone Garuffi, Jiduan Wu, and <span class="me">Yatong Chen</span>.</div>
+    <div class="venue"><i>NeurIPS 2026 Workshop on E-Values: From Statistics to ML.</i></div>
+    <!-- TODO: add [paper] link when public -->
+  </div>
+
+  <div class="pub" id="pub-fastimplicit">
+    <span class="num">[14]</span>
+    <div class="title">Fast Implicit Constrained Optimization of Non-decomposable Objectives for Deep Networks</div>
+    <div><span class="me">Yatong Chen</span>, Abhishek Kumar, Yang Liu, and Ehsan Amid.</div>
+    <div class="venue"><i>Has It Trained Yet? NeurIPS 2022 Workshop.</i></div>
+    <div class="links"><a href="https://openreview.net/pdf?id=u8kFmPafOc" target="_blank" rel="noopener noreferrer">[paper]</a></div>
+  </div>
+
+  <div class="pub" id="pub-fishy">
+    <span class="num">[15]</span>
+    <div class="title">Fishy: Layerwise Fisher Approximation for Higher-order Neural Network Optimization</div>
+    <div>Abel Peirson*, Ehsan Amid*, <span class="me">Yatong Chen</span>, Vladimir Feinberg, Manfred K. Warmuth, and Rohan Anil.</div>
+    <div class="venue"><i>Has It Trained Yet? NeurIPS 2022 Workshop.</i></div>
+    <div class="links"><a href="https://openreview.net/pdf?id=cScb-RrBQC" target="_blank" rel="noopener noreferrer">[paper]</a></div>
+  </div>
+
+  <div class="pub" id="pub-psl">
+    <span class="num">[16]</span>
+    <div class="title">Decoupled Smoothing in Probabilistic Soft Logic</div>
+    <div><span class="me">Yatong Chen</span>*, Bryan Tor*, Eriq Augustine, and Lise Getoor.</div>
+    <div class="venue"><i>15th International Workshop on Mining and Learning with Graphs (MLG), 2020.</i></div>
+    <div class="links">
+      <a href="http://www.mlgworkshop.org/2020/papers/MLG2020_paper_31.pdf" target="_blank" rel="noopener noreferrer">[paper]</a>
+      <a href="https://docs.google.com/presentation/d/1kqzejzGO-PLFPX0_oYRYmP-U3qFvr4SjZPKYpsbmIRI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">[slides]</a>
+    </div>
+  </div>
+
+  <!-- ================================================================ -->
+  <h2 id="distinctions">Distinctions</h2>
+  <ul class="plain">
+    <li>Chancellor’s Dissertation-Year Fellowship, UC Santa Cruz, 2023 <i>(sole recipient in the School of Engineering)</i></li>
+    <li>Best Paper Award, ICML Workshop on New Frontiers in Adversarial Machine Learning, 2022</li>
+    <li>Finalist, Google PhD Fellowship, 2022</li>
+    <li>Best Paper Award, ICML Workshop on Algorithmic Recourse, 2021</li>
+    <li>Baskin Engineering Fellowship for Anti-Racism Research, UC Santa Cruz, 2021</li>
+    <li>Regents Fellowship, UC Santa Cruz, 2019</li>
+  </ul>
+
+  <!-- ================================================================ -->
+  <h2 id="talks">Selected Talks</h2>
+  <ul class="plain">
+    <!-- TODO: add exact month and check talk titles for the MPI-SWS, MSR and Stanford entries; reorder by date if needed -->
+    <li><b>Max Planck Institute for Software Systems (MPI-SWS)</b>, Germany. Invited talk. Upcoming.</li>
+    <li><b>Microsoft Research New York City</b>, New York, USA. Invited talk: <i>Why LLM Leaderboards Create Bad Incentives and How to Fix Them</i>. 2026.</li>
+    <li><b>AI Measurement Seminar, Stanford University</b>, Stanford, USA. Invited talk: <i>Why LLM Leaderboards Create Bad Incentives and How to Fix Them</i>. 2026.</li>
+    <li><b>Workshop on Algorithms for Learning and Economics (WALE)</b>, Limnos, Greece. Invited talk: <i>Why LLM Leaderboards Create Bad Incentives and How to Fix Them</i>. July 2026. <a href="https://wale.gr/2026/" target="_blank" rel="noopener noreferrer">[link]</a></li>
+    <li><b>Machine Learning in Science Conference</b>, Tübingen, Germany. Invited talk: <i>Why LLM Leaderboards Create Bad Incentives and How to Fix Them</i>. July 2026.</li>
+    <li><b>ETH AI Center Academic Talk Series (AICATS)</b>, Zürich, Switzerland. Invited talk: <i>Why LLM Leaderboards Create Bad Incentives and How to Fix Them</i>. March 2026.</li>
+    <li><b>Tübingen Women in Machine Learning</b>, Tübingen, Germany. Invited talk: <i>Why LLM Leaderboards Create Bad Incentives and How to Fix Them</i>. March 2026. <a href="https://www.linkedin.com/posts/twiml-tubingen-women-in-ml_we-are-pleased-to-introduce-the-fourth-speaker-activity-7432047314870935552-BRBp" target="_blank" rel="noopener noreferrer">[link]</a></li>
+    <li><b>Friday Talks, Tübingen AI Center</b>, Tübingen, Germany. <i>Strategic Hypothesis Testing</i>. November 2025.</li>
+    <li><b>University of Pennsylvania Theory Seminar</b>, Philadelphia, USA. Invited talk: <i>Metric-Fair Classifier Derandomization</i>. April 2024.</li>
+    <li><b>ICML 2022</b>, Baltimore, USA. Spotlight talk: <i>Metric-Fair Classifier Derandomization</i>. July 2022. <a href="https://icml.cc/virtual/2022/spotlight/17056" target="_blank" rel="noopener noreferrer">[link]</a></li>
+    <li><b>ICML Workshop on New Frontiers in Adversarial Machine Learning</b>, Baltimore, USA. <i>Model Transferability with Responsive Decision Subjects</i>. July 2022. <a href="https://advml-frontier.github.io/" target="_blank" rel="noopener noreferrer">[link]</a></li>
+    <li><b>ICML Workshop on Algorithmic Recourse</b>, virtual. Spotlight talk: <i>Learning Classifiers that Incentivize Constructive Adaptation</i>. July 2021. <a href="https://sites.google.com/view/recourse21/" target="_blank" rel="noopener noreferrer">[link]</a></li>
+    <li><b>Institute for Foundations of Data Science (IFDS) Ethics Seminar</b>. Invited talk: <i>Learning Classifiers that Incentivize Constructive Adaptation</i>. May 2021.</li>
+    <li><b>NeurIPS Workshop on Consequential Decision Making in Dynamic Environments</b>, virtual. <i>Learning Classifiers that Incentivize Constructive Adaptation</i>. December 2020. <a href="https://dynamicdecisions.github.io/" target="_blank" rel="noopener noreferrer">[link]</a></li>
+    <li><b>UCSC Theory Reading Group</b>, Santa Cruz, USA. Invited talk: <i>Decoupled Smoothing on Graphs</i>. October 2019.</li>
+    <li><b>The Web Conference (WWW)</b>, San Francisco, USA. Oral: <i>Decoupled Smoothing on Graphs</i>. May 2019. <a href="https://www2019.thewebconf.org/" target="_blank" rel="noopener noreferrer">[link]</a></li>
+  </ul>
+
+  <!-- ================================================================ -->
+  <h2 id="teaching">Teaching &amp; Service</h2>
+
+  <h3>Teaching</h3>
+  <ul class="plain">
+    <li>Guest lecture, CSE 146: Ethics and Algorithms, UC Santa Cruz</li>
+    <li>Teaching assistant, CSE 101: Introduction to Data Structures and Algorithms, UC Santa Cruz</li>
+    <li>Teaching assistant, CSE 16: Applied Discrete Mathematics, UC Santa Cruz</li>
+  </ul>
+
+  <h3>Service &amp; Community</h3>
+  <ul class="plain">
+    <li>Co-organizer, <a href="https://sites.google.com/view/benchmarking-and-evaluating-ai" target="_blank" rel="noopener noreferrer">The Science of Benchmarking and Evaluating AI</a>, EurIPS 2025 Workshop, Copenhagen</li>
+    <li>Roundtable lead, <a href="https://www.afciworkshop.org" target="_blank" rel="noopener noreferrer">Algorithmic Fairness Across Alignment Procedures and Agentic Systems (AFAA) Workshop</a>, ICLR 2026</li>
+    <li>Invited speaker and panel lead, <a href="https://www.linkedin.com/posts/twiml-tubingen-women-in-ml_we-are-pleased-to-introduce-the-fourth-speaker-activity-7432047314870935552-BRBp" target="_blank" rel="noopener noreferrer">Tübingen Women in Machine Learning (TüWiML)</a>, 2026</li>
+  </ul>
+
+  <!-- ================================================================ -->
+  <h2 id="contact">Contact</h2>
+  <p>
+    Email: yatong.chen [at] tuebingen.mpg.de<br>
+    Max Planck Institute for Intelligent Systems, Tübingen, Germany<br>
+    <a href="https://scholar.google.com/citations?user=yoExm_UAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> ·
+    <a href="https://twitter.com/YatongChen" target="_blank" rel="noopener noreferrer">Twitter</a> ·
+    <a href="https://www.linkedin.com/in/yatong-chen-184863126/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </p>
+
+</div>
+</body>
+</html>
